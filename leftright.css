@@ -1,0 +1,91 @@
+/*this part is for the left container*/
+.desktop-nav{
+    min-width:336px;
+    /*1400+:336, 768+:256 543.98-:hide*/
+    height: 100vh;
+    border-right: var(--border-line);
+    padding: 7.5rem 1.5rem 1rem 7.5rem;
+}
+
+nav{
+    position: fixed;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    list-style: none;
+}
+
+.nav-links li {
+    height: 64px;
+}
+
+.nav-links li a {
+    font-weight: 500;
+    font-size: var(--h4-size);
+    color: var(--default-text);
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav-links li a:hover {
+    color: var(--default-hover-text);
+}
+
+.nav-links li a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: var(--default-hover-text);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+    pointer-events: none;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/*this part is for the right container*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width:336px;
+    max-width:336px;
+    /*1400+:336, 768+:256 543.98-:hide*/
+    height: 100vh;
+}
+
+.pin {
+    background-image: linear-gradient(to top left, #dff7bd, #40f2ec, #add2ed, #ffb2ff);
+    
+}
+
+.pin-button {
+    width: 100%;
+    background-color: #ffffff;
+    color: var(--default-text);
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: auto;
+    width: 336px;
+}
+
+.map iframe {
+    width: 336px;
+    height: auto;
+    border-radius: var(--borderRadius-large);
+}
