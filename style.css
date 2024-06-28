@@ -2,4 +2,70 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "SF Pro Text", sans-serif;
 }
+
+.main-page{
+    display: flex;
+}
+
+.desktop-nav{
+    min-width:336px;
+    /*1400+:336, 768+:256 543.98-:hide*/
+    height: 100vh;
+    border-right: 1px solid #d0d7de;
+    padding: 120px 24px 16px 120px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    list-style: none;
+}
+
+.nav-links li {
+    height: 55px;
+}
+
+.nav-links li a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #1F2328;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav-links li a:hover {
+    color: #636c76;
+}
+
+.nav-links li a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #1F2328;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+    pointer-events: none;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+:root {
+    --default-text: #1F2328;
+    --default-hover-text:  #636c76;
+    --button-text: #636c76;
+    --button-hover-text: #eef1f4;
+    --deep-bg:#f6f8fa;
+}
+
+ 
