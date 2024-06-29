@@ -80,12 +80,12 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    margin: auto;
-    width: 336px;
+    margin-top: auto;
 }
 
 .map iframe {
     width: 336px;
     height: auto;
     border-radius: var(--borderRadius-large);
+    filter: grayscale(100%) invert(100%);
 }

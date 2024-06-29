@@ -1,0 +1,20 @@
+
+.home-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+}
+
+.pixarme-image {
+    display: flex;
+    justify-content: center;
+    width:50%;
+}
+
+.pixarme {
+    border-radius:var(--borderRadius-full);
+    border: var(--border-line);
+    box-shadow: var(--secondary-shadow);
+    width:75%;
+}

@@ -33,24 +33,3 @@ header {
     color: var(--default-text);
 }
 
-.scm-icon {
-    width: 1rem;
-    height: 1rem;
-    filter: invert(44%) sepia(11%) saturate(476%) hue-rotate(171deg) brightness(89%) contrast(82%);
-}
-
-.cta {
-    background-color: var(--deep-bg);
-    padding: 0px var(--h6-size);
-    color: var(--secondary-text);
-}
-
-.scm {
-    background-color: var(--deep-bg);
-    display: flex;
-    justify-content: center;
-    width: 2rem;
-    align-items: center;
-    
-}
-
