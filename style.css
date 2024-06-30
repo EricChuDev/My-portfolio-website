@@ -2,8 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "SF Pro Text", sans-serif;
+    
 }
+
+body {
+    font-family: "SF Pro Text", sans-serif;
+  }
 
 .main-page{
     display: flex;
@@ -55,7 +59,7 @@ button:hover {
 .cta {
     background-color: var(--cta-bg);
     padding: 0px var(--h6-size);
-    color: var(--color-text);
+    color: var(--color-button-text);
 }
 
 .cta:hover {
@@ -81,8 +85,12 @@ button:hover {
     
 }
 
-.content .container {
+.content > .container {
     box-shadow: var(--default-shadow);
+    margin-bottom: 1.5rem;
+}
+
+.content > .div-row {
     margin-bottom: 1.5rem;
 }
 
@@ -91,9 +99,11 @@ button:hover {
     gap: 1rem;
 }
 
-.div-row .container{
+.div-row > .container{
+    margin-top: 0.5rem;
     flex-basis: 100%;
     height: 100%;
+    box-shadow: var(--default-shadow);
 }
 
 
@@ -146,7 +156,7 @@ h5 {
 h6 {
     font-size: var(--h6-size);
     font-weight: 400;
-    color: var(--default-hover-text);
+    color: var(-secondary-text);
     line-height: 1.5;
 }
 
@@ -160,7 +170,7 @@ h6 {
     --deep-bg:#f6f8fa;
     --cta-bg: #1f883d;
     --cta-bg-hover: #1c8139;
-    --color-text: #f6f8fa;
+    --color-button-text: #f6f8fa;
     --border-line: 1px solid #d0d7de;
 
     --h00-size-mobile: 2.5rem;
