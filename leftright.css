@@ -57,12 +57,12 @@ nav{
 /*this part is for the right container*/
 .footer{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     gap: 1.5rem;
     min-width:336px;
     max-width:336px;
+    margin-bottom: 1rem;
     /*1400+:336, 768+:256 543.98-:hide*/
-    height: 100vh;
 }
 
 .pin {
@@ -87,5 +87,5 @@ nav{
     width: 336px;
     height: auto;
     border-radius: var(--borderRadius-large);
-    filter: grayscale(100%) invert(100%);
+    /*filter: grayscale(100%) invert(100%);*/
 }
